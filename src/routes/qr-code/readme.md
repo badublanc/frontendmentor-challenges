@@ -7,7 +7,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Live Demo URL: [https://badu-fmc.netlify.app/qr-code](https://badu-fmc.netlify.app/qr-code)
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/qr-code-component-svelte-and-tailwindcss-_Jm2_YD9_](https://www.frontendmentor.io/solutions/qr-code-component-svelte-and-tailwindcss-_Jm2_YD9_)
 
 ## Author
 
