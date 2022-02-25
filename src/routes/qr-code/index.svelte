@@ -3,9 +3,12 @@
 </svelte:head>
 
 <main class="min-h-screen flex items-center justify-center">
-	<div id="container" class="flex flex-col items-center bg-white outfit pt-4 rounded-3xl space-y-5">
+	<div
+		id="container"
+		class="flex flex-col items-center bg-white outfit pt-4 rounded-3xl space-y-4 drop-shadow-xl"
+	>
 		<img src="/assets/qr-code.png" alt="qr code" id="code" class="rounded-xl" />
-		<h1 class="w-4/5 text-center heading-text">
+		<h1 class="w-4/5 text-center heading-text pt-2">
 			Improve your front-end skills by building projects
 		</h1>
 		<p class="w-4/5 text text-center">
