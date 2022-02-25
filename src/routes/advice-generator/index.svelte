@@ -1,8 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
-
-	let data,
-		loading = true;
+	let loading = false;
+	let data = {
+		id: 117,
+		advice:
+			"It is easy to sit up and take notice, what's difficult is getting up and taking action."
+	};
 
 	const getAdvice = async () => {
 		loading = true;
@@ -15,18 +17,18 @@
 			console.log(error);
 		}
 	};
-
-	onMount(async () => {
-		await getAdvice();
-	});
 </script>
+
+<svelte:head>
+	<title>Badu's Advice Generator</title>
+</svelte:head>
 
 <div class="min-h-screen page-bg flex flex-col items-center justify-center">
 	<div
 		class="dark-gray-bg flex flex-col space-y-8 max-w-xl items-center rounded-2xl px-10 md:px-12 pt-12 pb-20 manrope mx-6"
 	>
 		{#if loading}
-			<img src="/assets/loading-2.gif" alt="" class="h-24 w-24 mb-3" />
+			<img src="/assets/loading-2.gif" alt="" class="h-32 w-32 mb-3" />
 		{:else}
 			<p class="uppercase heading-text text-xs">advice #{data.id}</p>
 			<p class="quote-text text-center px-2 pb-2">"{data.advice}"</p>
@@ -35,7 +37,7 @@
 		<img src="/assets/ag-divider-desktop.svg" alt="" class="" />
 	</div>
 
-	<button on:click={getAdvice} class="button-bg p-4 rounded-full -mt-7">
+	<button on:click={getAdvice} class="button-bg p-4 rounded-full -mt-7" aria-label="Refresh advice">
 		<img src="/assets/ag-dice.svg" alt="" class="" />
 	</button>
 </div>
