@@ -7,7 +7,7 @@
 	const getAdvice = async () => {
 		loading = true;
 		try {
-			const response = await fetch('https://api.adviceslip.com/advice');
+			const response = await fetch('https://api.adviceslip.com/advice', { cache: 'no-cache' });
 			const advice = await response.json();
 			data = advice.slip;
 			loading = false;
