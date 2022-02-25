@@ -12,7 +12,7 @@
 			Improve your front-end skills by building projects
 		</h1>
 		<p class="w-4/5 text text-center">
-			Scan the QR code to visit Frontend Mentor and take you coding skills to the next level
+			Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
 		</p>
 	</div>
 </main>
