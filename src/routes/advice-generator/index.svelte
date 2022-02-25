@@ -23,14 +23,14 @@
 	<title>Badu's Advice Generator</title>
 </svelte:head>
 
-<div class="min-h-screen page-bg flex flex-col items-center justify-center">
+<main class="min-h-screen page-bg flex flex-col items-center justify-center">
 	<div
 		class="dark-gray-bg flex flex-col space-y-8 max-w-xl items-center rounded-2xl px-10 md:px-12 pt-12 pb-20 manrope mx-6"
 	>
 		{#if loading}
 			<img src="/assets/loading-2.gif" alt="" class="h-32 w-32 mb-3" />
 		{:else}
-			<p class="uppercase heading-text text-xs">advice #{data.id}</p>
+			<h1 class="uppercase heading-text text-xs">advice #{data.id}</h1>
 			<p class="quote-text text-center px-2 pb-2">"{data.advice}"</p>
 		{/if}
 
@@ -40,7 +40,7 @@
 	<button on:click={getAdvice} class="button-bg p-4 rounded-full -mt-7" aria-label="Refresh advice">
 		<img src="/assets/ag-dice.svg" alt="" class="" />
 	</button>
-</div>
+</main>
 
 <style>
 	/* Colors

@@ -8,7 +8,7 @@ const config = {
 		adapter: adapter()
 	},
 
-	extensions: ['.svelte'], // add '.md' for markdown support again
+	extensions: ['.svelte', '.md'],
 
 	preprocess: [
 		preprocess({
